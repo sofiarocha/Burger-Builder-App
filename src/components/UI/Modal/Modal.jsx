@@ -7,7 +7,7 @@ import Backdrop from '../Backdrop/Backdrop';
 class Modal extends Component {
     //to optimize the app and order summary just be render when we click on the "ORDER NOW" is clicked
     shouldComponentUpdate (nextProps, nextState) {
-        return nextProps.show !== this.props.show
+        return nextProps.show !== this.props.show || nextProps.children !== this.props.children
     }
 
     render() {
